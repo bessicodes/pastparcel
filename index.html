@@ -74,7 +74,10 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
       <a href="#drop" class="hidden md:block hover:underline underline-offset-4">Archive</a>
       <a href="#how" class="hidden md:block hover:underline underline-offset-4 translate-y-[1px]">How</a>
       <a href="#ship" class="hidden md:block hover:underline underline-offset-4">Ship</a>
-      <button onclick="openChat()" class="border-[1.5px] border-[#121212] bg-white px-3 py-2 hover:bg-[#E8B44A]/25">Chat</button>
+      <a href="https://wa.me/27722996492" target="_blank" rel="noopener" aria-label="WhatsApp us on 072 299 6492" class="border-[1.5px] border-[#121212] bg-white px-3 py-2 hover:bg-[#E8B44A]/25 flex items-center gap-1.5">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#121212" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#121212"/></svg>
+        <span class="hidden sm:inline">WhatsApp</span>
+      </a>
       <button onclick="openBag()" class="bg-[#121212] text-white px-3 py-2 flex items-center gap-2" aria-label="Open your parcel"><span>Parcel</span><span id="bagCount" class="bg-[#C46A3A] text-white px-1.5 min-w-[20px] text-center">0</span></button>
     </div>
   </div>
@@ -181,7 +184,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
       <h2 class="font-fraunces font-[900] text-[40px] md:text-[60px] leading-[0.92] rotate-[-0.35deg]">Archive — Drop 01<span class="text-[#C46A3A]">/</span>July 2026
         <span class="block text-[16px] md:text-[19px] font-[700] tracking-[0.16em] uppercase mt-2" style="font-family:'Sora'">Real stock &bull; 3 lots &bull; more to come</span>
       </h2>
-      <p class="font-newsreader italic text-[15px] max-w-[40ch] leading-snug">Every photo below was taken by the seller — dust, fingerprints and all. Price shown only on the non-alcohol lot; the bottles are enquiry only, 18+.</p>
+      <p class="font-newsreader italic text-[15px] max-w-[40ch] leading-snug">Every photo below was taken by the seller — dust, fingerprints and all. Bottle values are estimates only; final price is agreed on WhatsApp, 18+.</p>
     </div>
 
     <div class="mt-10 grid md:grid-cols-3 gap-8 md:gap-6 items-start">
@@ -206,8 +209,15 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
             <img data-asset="shield" class="border border-[#121212]/20 h-[92px] object-cover w-full" alt="Close-up of the solid brass shield label" width="300" height="92">
             <img data-asset="edition" class="border border-[#121212]/20 h-[92px] object-cover w-full" alt="192 of 203 Special Edition sticker on the case" width="300" height="92">
           </div>
-          <button onclick="openChat('Lot 01 — Pick\'n Pay Into The Millennium 1998 Cabernet Sauvignon 3.0L Magnum (192 of 203)')" class="mt-4 w-full bg-[#121212] text-white uppercase text-[11px] tracking-[0.12em] font-[700] py-3.5 hover:bg-[#121212]/90">Enquire — 18+ Collectible</button>
-          <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60">No online price &bull; Enquiry only &bull; 18+ &bull; Sold as memorabilia, not guaranteed drinkable &bull; Collection or licensed courier, ID required</p>
+          <div class="mt-3 flex items-end justify-between border-t-[1.5px] border-dashed border-[#121212]/30 pt-3">
+            <div class="font-fraunces font-[900] text-[18px] leading-none rotate-[-0.8deg] whitespace-nowrap">&plusmn; R1,500&ndash;R3,000</div>
+            <div class="text-[9px] uppercase tracking-[0.1em] text-right leading-[1.7] opacity-70">Our estimate, guide only<br>final price on WhatsApp</div>
+          </div>
+          <a href="https://wa.me/27722996492?text=Hi%20Pastparcel,%20I'm%20interested%20in%20Lot%2001:%20Pick'n%20Pay%20Into%20The%20Millennium%201998%20Cabernet%20Sauvignon%203.0L%20Magnum%20(192%20of%20203)" target="_blank" rel="noopener" class="mt-4 w-full bg-[#121212] text-white uppercase text-[11px] tracking-[0.12em] font-[700] py-3.5 hover:bg-[#121212]/90 flex items-center justify-center gap-2">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#fff"/></svg>
+            WhatsApp — 18+ Collectible
+          </a>
+          <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60">Estimate is a guide only &bull; Final price on WhatsApp &bull; 18+ &bull; Sold as memorabilia, not guaranteed drinkable &bull; Collection or licensed courier, ID required</p>
         </div>
       </article>
 
@@ -224,8 +234,15 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
           <div class="mt-2 font-[700] text-[10px] uppercase tracking-[0.14em] leading-[1.7]">Ko-Operatieve Wijnbouwers Vereniging Van Zuid-Afrika Beperkt &bull; Paarl</div>
           <p class="mt-2 font-newsreader text-[13.5px] leading-[1.45]">Vintage Republic-era bottling. The back label says it plainly: pure copper potstill distillation, backed by 300 years of viticulture tradition, aged at least ten years in oak casks. Green bottle, gold label. Back label photographed below — read it yourself.</p>
           <img data-asset="kwvBack" class="mt-3 border border-[#121212]/20 w-full h-[180px] object-cover object-top" alt="KWV back label describing pure copper potstill distillation and ten years ageing in oak casks" width="600" height="180">
-          <button onclick="openChat('Lot 02 — KWV 10 Year Old Brandy 750ml, Republic era')" class="mt-4 w-full bg-[#121212] text-white uppercase text-[11px] tracking-[0.12em] font-[700] py-3.5 hover:bg-[#121212]/90">Enquire — 18+ Collectible</button>
-          <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60">No online price &bull; Enquiry only &bull; 18+ &bull; Sold as memorabilia, not guaranteed drinkable &bull; Collection or licensed courier, ID required</p>
+          <div class="mt-3 flex items-end justify-between border-t-[1.5px] border-dashed border-[#121212]/30 pt-3">
+            <div class="font-fraunces font-[900] text-[18px] leading-none rotate-[0.6deg] whitespace-nowrap">&plusmn; R600&ndash;R1,200</div>
+            <div class="text-[9px] uppercase tracking-[0.1em] text-right leading-[1.7] opacity-70">Our estimate, guide only<br>final price on WhatsApp</div>
+          </div>
+          <a href="https://wa.me/27722996492?text=Hi%20Pastparcel,%20I'm%20interested%20in%20Lot%2002:%20KWV%2010%20Year%20Old%20Brandy%20750ml,%20Republic%20era" target="_blank" rel="noopener" class="mt-4 w-full bg-[#121212] text-white uppercase text-[11px] tracking-[0.12em] font-[700] py-3.5 hover:bg-[#121212]/90 flex items-center justify-center gap-2">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#fff" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#fff"/></svg>
+            WhatsApp — 18+ Collectible
+          </a>
+          <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60">Estimate is a guide only &bull; Final price on WhatsApp &bull; 18+ &bull; Sold as memorabilia, not guaranteed drinkable &bull; Collection or licensed courier, ID required</p>
         </div>
       </article>
 
@@ -242,12 +259,15 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
           <div class="mt-2 font-[700] text-[10px] uppercase tracking-[0.14em] leading-[1.7]">Floor standing &bull; ~1.1m tall &bull; Heavy &bull; Rotary dial</div>
           <p class="mt-2 font-newsreader text-[13.5px] leading-[1.45]">A brass column you answer the phone on. Ornate etched bands down the pedestal, yellow bakelite handset, coiled cord present, side-mounted rotary dial. Electrics untested — <em>sold as decor</em>. It is heavy; bring a friend or let us courier it.</p>
           <div class="mt-4 flex items-end justify-between border-t-[1.5px] border-dashed border-[#121212]/30 pt-3">
-            <div class="font-fraunces font-[900] text-[26px] leading-none rotate-[-1deg]">R 2,850</div>
-            <div class="text-[9.5px] uppercase tracking-[0.1em] text-right leading-[1.7]">Collection or courier<br>— see calculator</div>
+            <div class="font-fraunces font-[900] text-[24px] leading-none rotate-[-1deg] whitespace-nowrap">R 2,850</div>
+            <div class="text-[9.5px] uppercase tracking-[0.1em] text-right leading-[1.7]">Market est. R2,000&ndash;R4,000<br>Collection or courier — see calculator</div>
           </div>
           <div class="mt-4 flex gap-2">
             <button onclick="addPhone()" class="flex-1 bg-[#C46A3A] text-[#121212] border-[1.5px] border-[#121212] offset-shadow uppercase text-[11px] tracking-[0.12em] font-[700] py-3.5">Add To Parcel</button>
-            <button onclick="openChat('Lot 03 — Brass Pedestal Rotary Telephone, R2,850')" class="border-[1.5px] border-[#121212] bg-white px-5 py-3.5 text-[11px] uppercase font-[700] tracking-[0.1em]">Ask</button>
+            <a href="https://wa.me/27722996492?text=Hi%20Pastparcel,%20I'm%20interested%20in%20Lot%2003:%20Brass%20Pedestal%20Rotary%20Telephone,%20R2,850" target="_blank" rel="noopener" class="border-[1.5px] border-[#121212] bg-white px-4 py-3.5 text-[11px] uppercase font-[700] tracking-[0.1em] flex items-center gap-1.5">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#121212" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#121212"/></svg>
+              WhatsApp
+            </a>
           </div>
           <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60">Untested electrics &bull; Sold as decor &bull; Cord present &bull; Heavy item</p>
         </div>
@@ -289,7 +309,7 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
       </div>
       <div class="wobbly bg-[#E8B44A]/15 p-4 rotate-[0.5deg]">
         <span class="font-[700] text-[10px] uppercase tracking-[0.12em]">Got something old to sell?</span>
-        <span class="font-newsreader text-[13.5px]"> Pastparcel is opening up to sellers — listing your own old things is coming soon. In the meantime, tell us what you've got on chat or WhatsApp.</span>
+        <span class="font-newsreader text-[13.5px]"> Pastparcel is opening up to sellers — listing your own old things is coming soon. In the meantime, send us a WhatsApp with what you've got.</span>
       </div>
     </div>
   </div>
@@ -342,31 +362,9 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#121212" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#121212"/></svg>
         WHATSAPP 072 299 6492
       </a>
-      <button onclick="openChat()" class="underline underline-offset-4 uppercase font-[700] tracking-[0.12em]">Enquiries via chat</button>
     </div>
   </div>
 </footer>
-
-<!-- ============ CHAT DRAWER ============ -->
-<div id="chatDrawer" class="drawer fixed inset-0 z-50" data-open="false" role="dialog" aria-modal="true" aria-label="Enquiry chat">
-  <div class="drawer-veil absolute inset-0 bg-[#121212]/40" onclick="closeChat()"></div>
-  <div class="drawer-panel absolute right-0 top-0 h-full w-full max-w-[390px] bg-[#F9F6F0] border-l-[1.5px] border-[#121212] flex flex-col">
-    <div class="h-[56px] border-b-[1.5px] border-[#121212] flex items-center justify-between px-4 bg-white shrink-0">
-      <div class="font-[700] text-[11px] uppercase tracking-[0.14em]">Enquire — Pastparcel <span class="text-[#C46A3A]">&bull;</span> Drop 01</div>
-      <button onclick="closeChat()" class="border-[1.5px] border-[#121212] w-8 h-8 grid place-items-center hover:bg-[#E8B44A]/30" aria-label="Close chat">&#10005;</button>
-    </div>
-    <div id="chatTopic" class="hidden px-4 py-2 border-b border-[#121212]/15 bg-[#E8B44A]/15 text-[10px] uppercase tracking-[0.12em] font-[700] shrink-0"></div>
-    <div id="chatBox" class="flex-1 overflow-y-auto p-3 space-y-2 bg-[#EDE8DE]/60"></div>
-    <a id="waLink" href="https://wa.me/27722996492?text=Hi%20Pastparcel%20%E2%80%94%20enquiring%20about%20Drop%2001" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 border-t-[1.5px] border-[#121212] bg-[#E8B44A]/25 px-4 py-3 text-[10px] uppercase tracking-[0.14em] font-[700] hover:bg-[#E8B44A]/50 shrink-0">
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3Z" stroke="#121212" stroke-width="2"/><path d="M8.8 9.2c.3 2.4 3.6 5.4 6 5.9l1-1.5-2-1.3-1 .7c-.8-.4-1.9-1.5-2.3-2.3l.8-1-1.3-2-1.2.5Z" fill="#121212"/></svg>
-      Prefer WhatsApp? 072 299 6492 — tap to chat
-    </a>
-    <div class="p-2.5 border-t-[1.5px] border-[#121212] flex gap-2 bg-white shrink-0">
-      <input id="chatInput" class="flex-1 border-[1.5px] border-[#121212]/25 bg-[#F9F6F0] px-3 py-2.5 text-[13px] font-newsreader" placeholder="Type your message…" autocomplete="off">
-      <button onclick="sendChat()" class="bg-[#121212] text-white px-5 text-[11px] uppercase font-[700] tracking-[0.1em]">Send</button>
-    </div>
-  </div>
-</div>
 
 <!-- ============ BAG DRAWER ============ -->
 <div id="bagDrawer" class="drawer fixed inset-0 z-50" data-open="false" role="dialog" aria-modal="true" aria-label="Your parcel">
@@ -390,8 +388,8 @@ a:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{ou
         <div class="flex justify-between text-[12px] mt-2"><span class="font-newsreader italic" id="bagShipLabel">Shipping</span><span class="font-[700]" id="bagShipCost">R 0</span></div>
       </div>
       <div class="flex justify-between font-fraunces font-[900] text-[19px] border-t border-[#121212]/15 pt-2.5"><span>Total</span><span id="bagTotal">R 0</span></div>
-      <button id="reserveBtn" onclick="reserveParcel()" class="mt-3.5 w-full bg-[#C46A3A] text-[#121212] border-[1.5px] border-[#121212] offset-shadow py-3.5 uppercase text-[12px] tracking-[0.1em] font-[700]">Reserve — Chat To Pay</button>
-      <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60 text-center">No alcohol in checkout &bull; EFT via chat &bull; Collection welcome</p>
+      <button id="reserveBtn" onclick="reserveParcel()" class="mt-3.5 w-full bg-[#C46A3A] text-[#121212] border-[1.5px] border-[#121212] offset-shadow py-3.5 uppercase text-[12px] tracking-[0.1em] font-[700]">Reserve — WhatsApp To Pay</button>
+      <p class="mt-2.5 text-[9.5px] uppercase tracking-[0.09em] leading-[1.8] opacity-60 text-center">No alcohol in checkout &bull; EFT via WhatsApp &bull; Collection welcome</p>
     </div>
   </div>
 </div>
@@ -491,17 +489,11 @@ function renderBag(){
 }
 
 function reserveParcel(){
-  if (bag.length === 0){ closeBag(); openChat(); return; }
+  if (bag.length === 0) return;
   const r = ROUTES[shipIndex];
   const total = PHONE_PRICE + r.cost;
-  closeBag();
-  openChat(null);
   const summary = "RESERVE: Brass Pedestal Rotary Telephone — " + rand(PHONE_PRICE) + " + shipping to " + r.city + " (" + rand(r.cost) + ") = " + rand(total) + ". How do I pay?";
-  updateWaLink(summary);
-  pushMsg("me", summary);
-  setTimeout(() => {
-    pushMsg("them", "Lekker — the phone is yours pending EFT. Tap the WhatsApp button below (072 299 6492) and we finalise payment there. You can also arrange collection and skip the " + rand(r.cost) + " courier. It's heavy (~1.1m of brass), so if it ships, it goes well-padded.");
-  }, 700);
+  window.open("https://wa.me/27722996492?text=" + encodeURIComponent(summary), "_blank", "noopener");
 }
 
 /* ============ DRAWERS ============ */
@@ -509,80 +501,9 @@ function openDrawer(id){ document.getElementById(id).setAttribute("data-open","t
 function closeDrawer(id){ document.getElementById(id).setAttribute("data-open","false"); }
 function openBag(){ renderBag(); openDrawer("bagDrawer"); }
 function closeBag(){ closeDrawer("bagDrawer"); }
-function closeChat(){ closeDrawer("chatDrawer"); }
 document.addEventListener("keydown", e => {
-  if (e.key === "Escape"){ closeBag(); closeChat(); }
+  if (e.key === "Escape") closeBag();
 });
-
-/* ============ CHAT ============ */
-let chatHistory = [];
-let greeted = false;
-
-function pushMsg(from, text){
-  chatHistory.push({ from, text });
-  renderChat();
-}
-
-function renderChat(){
-  const box = document.getElementById("chatBox");
-  box.innerHTML = chatHistory.map((m, i) =>
-    '<div class="' + (m.from === "me" ? "ml-auto bg-[#121212] text-white" : "bg-white") + ' max-w-[85%] border border-[#121212]/10 px-3 py-2 text-[13px] leading-[1.45] font-newsreader rotate-[' + (i % 2 ? "0.3" : "-0.25") + 'deg]">' + m.text + '</div>'
-  ).join("");
-  box.scrollTop = box.scrollHeight;
-}
-
-function updateWaLink(msg){
-  document.getElementById("waLink").href = "https://wa.me/27722996492?text=" + encodeURIComponent(msg);
-}
-
-function openChat(topic){
-  openDrawer("chatDrawer");
-  const topicEl = document.getElementById("chatTopic");
-  if (topic){
-    topicEl.textContent = "RE: " + topic;
-    topicEl.classList.remove("hidden");
-    updateWaLink("Hi Pastparcel — I'm interested in " + topic);
-  }
-  if (!greeted){
-    greeted = true;
-    pushMsg("them", "Howzit! Pastparcel here — Drop 01 is live. Which lot can I tell you about? Happy to get more angles or a video from the seller.");
-  }
-  const inp = document.getElementById("chatInput");
-  if (topic){
-    inp.value = "Hi — I'm interested in " + topic + ". ";
-  }
-  inp.focus();
-}
-
-function replyFor(txt){
-  const t = txt.toLowerCase();
-  if (t.includes("millennium") || t.includes("1998") || t.includes("cabernet") || t.includes("wine") || t.includes("lot 01") || t.includes("192")){
-    return "The Millennium magnum — 192 of 203, Simonsvlei, Coastal Region, A135, 12.5% vol, 3.0L. Metal case with green satin, solid brass shield, wax cap chipped but sealed. Sold as memorabilia, not guaranteed drinkable. 18+ with ID — Collection or licensed courier. No online price; make me a sensible offer. Want a video of the hinge and base?";
-  }
-  if (t.includes("kwv") || t.includes("brandy") || t.includes("lot 02")){
-    return "KWV 10 Year — Republic-era bottling, 750ml, green bottle, gold label. Back label: pure copper potstill, 300 years tradition, aged ten years in oak casks, Paarl. Sold as memorabilia, not guaranteed drinkable. 18+ with ID, Collection or licensed courier. No online price — enquire with your offer.";
-  }
-  if (t.includes("phone") || t.includes("telephone") || t.includes("brass") || t.includes("bakelite") || t.includes("lot 03")){
-    return "The brass pedestal phone — about 1.1m tall, heavy, yellow bakelite handset, rotary dial, cord present, electrics untested so it's sold as decor. R2,850. Add it to your parcel on the site — courier is calculated at checkout, or arrange collection with us.";
-  }
-  if (t.includes("price") || t.includes("cost") || t.includes("how much")){
-    return "Only the telephone has an online price — R2,850 plus courier. The two bottles are alcohol collectibles: no online price, enquiry only, 18+ with ID. Tell me which lot and your offer.";
-  }
-  if (t.includes("ship") || t.includes("courier") || t.includes("deliver") || t.includes("collect")){
-    return "The telephone couriers for: Joburg R120, Pretoria R180, Durban R290, Stellenbosch R410, Cape Town R420 — or arrange collection. Alcohol: licensed courier or collection only, 18+ ID checked at handover.";
-  }
-  return "Sharp, got it. I'll come back with photos, measurements or a video from the seller. Remember: alcohol lots are 18+ enquiry only — the telephone is the only lot with checkout.";
-}
-
-function sendChat(){
-  const inp = document.getElementById("chatInput");
-  const txt = inp.value.trim();
-  if (!txt) return;
-  inp.value = "";
-  pushMsg("me", txt);
-  setTimeout(() => pushMsg("them", replyFor(txt)), 650);
-}
-document.getElementById("chatInput").addEventListener("keydown", e => { if (e.key === "Enter") sendChat(); });
 
 /* boot */
 setShip(shipIndex);

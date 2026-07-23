@@ -1,6 +1,6 @@
 # PASTPARCEL.CO.ZA — Drop 01
 
-Official site for Pastparcel — a Randburg garage archive. One self-contained `index.html`: all photos embedded, no build step, no backend.
+Official site for Pastparcel — a marketplace for old things with real photos and real provenance. One self-contained `index.html`: all photos embedded, no build step, no backend. Seller listings open soon; Drop 01 is the first batch.
 
 **Drop 01 / July 2026 — 3 lots, all photos real:**
 
